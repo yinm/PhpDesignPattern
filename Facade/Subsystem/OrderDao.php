@@ -19,7 +19,7 @@ class OrderDao
                  . $orderItem->getItem()->getName() . "\t"
                  . $orderItem->getItem()->getPrice() . "\t"
                  . $orderItem->getAmount() . "\t"
-                 . ($orderItem->getItem()->getPrice() * $orderItem->getAmout())
+                 . ($orderItem->getItem()->getPrice() * $orderItem->getAmount())
                  . PHP_EOL;
         }
     }
