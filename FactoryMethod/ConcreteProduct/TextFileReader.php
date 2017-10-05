@@ -56,7 +56,7 @@ class TextFileReader implements Reader
         printf(
             '-->%s%s',
             implode(PHP_EOL . '-->', $titles),
-            count($titles) > 0 ? PHPP_EOL : null
+            count($titles) > 0 ? PHP_EOL : null
         );
     }
 }
