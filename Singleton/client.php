@@ -6,16 +6,18 @@ require dirname(__DIR__) . '/vendor/autoload.php';
 use PhpDesignPattern\Singleton\Singleton\SingletonSample;
 
 $instance1 = SingletonSample::getInstance();
-sleep(1);
 $instance2 = SingletonSample::getInstance();
 
-echo '<hr>';
-
-echo 'instance ID : ' . $instance1->getId() . '<br>';
-echo '$instance1->getId() === $instance2->getId() : ' . ($instance1->getId() === $instance2->getId() ? 'true' : 'false');
-echo '<hr>';
+echo 'instance Id : ' . $instance1->getId() . PHP_EOL;
+echo '$instance1->getId() === $instance2->getId() : '
+     . ($instance1->getId() === $instance2->getId() ? 'true' : 'false');
+echo PHP_EOL;
 
 echo '$instance1 === $instance2 : ' . ($instance1 === $instance2 ? 'true' : 'false');
-echo '<hr>';
+echo PHP_EOL;
 
-$instance1_clone = clone $instance1;
+try {
+    $instance1_clone = clone $instance1;
+} catch (\RuntimeException $e) {
+    echo $e->getMessage() . PHP_EOL;
+}
