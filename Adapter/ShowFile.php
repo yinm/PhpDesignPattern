@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Adapter;
 
+/**
+ * 2nd
+ *
+ * Class ShowFile
+ * @package PhpDesignPattern\Adapter
+ */
 class ShowFile
 {
     private $filename;
