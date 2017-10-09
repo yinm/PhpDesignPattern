@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Singleton\Singleton;
 
+/**
+ * 2nd
+ *
+ * Class SingletonSample
+ * @package PhpDesignPattern\Singleton\Singleton
+ */
 class SingletonSample
 {
     private $id;
