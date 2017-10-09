@@ -5,8 +5,10 @@ use PhpDesignPattern\Adapter\Ext\Target\DisplaySourceFile;
 use PhpDesignPattern\Adapter\ShowFile;
 
 /**
- * Adaptee: ShowFile
- * Target: DisplaySourceFile
+ * 2nd
+ *
+ * Class DisplaySourceFileImpl
+ * @package PhpDesignPattern\Adapter\Ext\Adapter
  */
 class DisplaySourceFileImpl extends ShowFile implements DisplaySourceFile
 {
