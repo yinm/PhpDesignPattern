@@ -3,6 +3,12 @@ namespace PhpDesignPattern\FactoryMethod\ConcreteProduct;
 
 use PhpDesignPattern\FactoryMethod\Product\Reader;
 
+/**
+ * 2nd
+ *
+ * Class TextFileReader
+ * @package PhpDesignPattern\FactoryMethod\ConcreteProduct
+ */
 class TextFileReader implements Reader
 {
     private $filename;
@@ -33,7 +39,7 @@ class TextFileReader implements Reader
             }
 
             list($artist, $title) = $data;
-            if (is_null($prevArtist)) {
+            if ($prevArtist === null) {
                 $prevArtist = $artist;
             }
             if ($artist !== $prevArtist) {
