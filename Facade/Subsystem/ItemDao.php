@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Facade\Subsystem;
 
+/**
+ * 2nd
+ *
+ * Class ItemDao
+ * @package PhpDesignPattern\Facade\Subsystem
+ */
 class ItemDao
 {
     private static $instance;
@@ -10,7 +16,7 @@ class ItemDao
     {
         $fp = fopen(dirname(__DIR__) . '/item_data.txt', 'r');
 
-        // ヘッダ行を抜く
+        // ヘッダ行を除く
         fgets($fp, 4096);
 
         $this->items = [];
@@ -46,11 +52,15 @@ class ItemDao
 
     public function setAside(OrderItem $orderItem)
     {
-        printf('%sの在庫引当を行いました%s', $orderItem->getItem()->getName(), PHP_EOL);
+        printf(
+            '%sの在庫引き当てを行いました%s',
+            $orderItem->getItem()->getName(),
+            PHP_EOL
+        );
     }
 
     final public function __clone()
     {
-        throw new \RuntimeException('Clone is not allowed against' . get_class($this));
+        throw new \RuntimeException('Clone is not allowed against ' . get_class($this));
     }
 }
