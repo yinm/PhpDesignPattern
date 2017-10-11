@@ -1,16 +1,20 @@
 <?php
 namespace PhpDesignPattern\FactoryMethod\ConcreteCreator;
 
-use PhpDesignPattern\FactoryMethod\Product\Reader;
 use PhpDesignPattern\FactoryMethod\ConcreteProduct\TextFileReader;
 use PhpDesignPattern\FactoryMethod\ConcreteProduct\XMLFileReader;
 
+/**
+ * 2nd
+ *
+ * Class ReaderFactory
+ * @package PhpDesignPattern\FactoryMethod\ConcreteCreator
+ */
 class ReaderFactory
 {
     public function create($filename)
     {
-        $reader = $this->createReader($filename);
-        return $reader;
+        return $this->createReader($filename);
     }
 
     private function createReader($filename)
@@ -19,12 +23,9 @@ class ReaderFactory
         $posXml = stripos($filename, '.xml');
 
         if ($posTxt !== false) {
-            $r = new TextFileReader($filename);
-            return $r;
-
+            return new TextFileReader($filename);
         } elseif ($posXml !== false) {
             return new XMLFileReader($filename);
-
         } else {
             die('This filename is not supported : ' . $filename);
         }

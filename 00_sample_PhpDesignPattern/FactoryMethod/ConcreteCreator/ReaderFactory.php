@@ -1,7 +1,7 @@
 <?php
 namespace DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteCreator;
 
-use DoYouPhp\PhpDesignPattern\FactoryMethod\Producr\Reader;
+use DoYouPhp\PhpDesignPattern\FactoryMethod\Product\Reader;
 use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\TextFileReader;
 use DoYouPhp\PhpDesignPattern\FactoryMethod\ConcreteProduct\XMLFileReader;
 
