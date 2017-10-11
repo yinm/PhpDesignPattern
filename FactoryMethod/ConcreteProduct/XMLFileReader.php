@@ -3,6 +3,12 @@ namespace PhpDesignPattern\FactoryMethod\ConcreteProduct;
 
 use PhpDesignPattern\FactoryMethod\Product\Reader;
 
+/**
+ * 2nd
+ *
+ * Class XMLFileReader
+ * @package PhpDesignPattern\FactoryMethod\ConcreteProduct
+ */
 class XMLFileReader implements Reader
 {
     private $filename;
