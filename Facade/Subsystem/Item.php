@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Facade\Subsystem;
 
+/**
+ * 2nd
+ *
+ * Class Item
+ * @package PhpDesignPattern\Facade\Subsystem
+ */
 class Item
 {
     private $id;
