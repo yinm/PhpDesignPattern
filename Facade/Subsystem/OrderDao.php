@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Facade\Subsystem;
 
+/**
+ * 2nd
+ *
+ * Class OrderDao
+ * @package PhpDesignPattern\Facade\Subsystem
+ */
 class OrderDao
 {
     public static function createOrder(Order $order)
