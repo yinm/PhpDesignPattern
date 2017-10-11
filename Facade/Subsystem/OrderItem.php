@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Facade\Subsystem;
 
+/**
+ * 2nd
+ *
+ * Class OrderItem
+ * @package PhpDesignPattern\Facade\Subsystem
+ */
 class OrderItem
 {
     private $item;
