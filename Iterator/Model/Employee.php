@@ -1,6 +1,12 @@
 <?php
 namespace PhpDesignPattern\Iterator\Model;
 
+/**
+ * 2nd
+ *
+ * Class Employee
+ * @package PhpDesignPattern\Iterator\Model
+ */
 class Employee
 {
     private $name;
