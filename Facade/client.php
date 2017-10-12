@@ -8,6 +8,9 @@ use PhpDesignPattern\Facade\Subsystem\OrderItem;
 use PhpDesignPattern\Facade\Subsystem\ItemDao;
 use PhpDesignPattern\Facade\Facade\OrderManager;
 
+/**
+ * 2nd
+ */
 $order = new Order();
 $itemDao = ItemDao::getInstance();
 
@@ -16,3 +19,4 @@ $order->addItem(new OrderItem($itemDao->findById(2), 1));
 $order->addItem(new OrderItem($itemDao->findById(3), 3));
 
 OrderManager::order($order);
+
