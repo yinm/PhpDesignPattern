@@ -7,6 +7,7 @@ use PhpDesignPattern\Iterator\Model\Employee;
 use PhpDesignPattern\Iterator\ConcreteAggregate\Employees;
 use PhpDesignPattern\Iterator\ConcreteIterator\SalesmanIterator;
 
+// 2nd
 function dumpWithForeach(\Iterator $iterator)
 {
     foreach ($iterator as $employee) {
@@ -28,7 +29,6 @@ $employees->add(new Employee('CLARK', 45, 'MANAGER'));
 $employees->add(new Employee('KING', 58, 'PRESIDENT'));
 
 $iterator = $employees->getIterator();
-
 
 echo '*Iteratorのメソッドを利用する' . PHP_EOL;
 while ($iterator->valid()) {
