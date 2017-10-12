@@ -3,6 +3,12 @@ namespace PhpDesignPattern\Iterator\ConcreteAggregate;
 
 use PhpDesignPattern\Iterator\Model\Employee;
 
+/**
+ * 2nd
+ *
+ * Class Employees
+ * @package PhpDesignPattern\Iterator\ConcreteAggregate
+ */
 class Employees implements \IteratorAggregate
 {
     private $employees;
